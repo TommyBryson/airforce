@@ -1,0 +1,240 @@
+body {
+    background-image: url(background.png);
+    background-size: 95% 102%;
+    background-position:  50% -110%;
+    background-repeat: no-repeat;
+}
+.logo {
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.line {
+    position: absolute;
+    left: 200px;
+    top: 250px;
+}
+
+.sl1-h1 {
+    font-weight: 700;
+    font-size: 64px;
+    margin-left:  240px;
+    margin-top: 60px;
+}
+.sl1-h2 {
+    color: red;
+    font-size: 36px;
+    margin-top: 0;
+    margin-left: 240px;
+}
+.sl1-h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 240px;
+}
+.sl1-p {
+    margin-left: 240px;
+    margin-top: 15px;
+}
+
+.btn {
+    width: 263px;
+    height: 53px ;
+    position: absolute;
+    top: 530px;
+    left: 240px;
+    background:  #fff;
+    border-radius: 15px;
+}
+.basket {
+    margin-left: -170px;
+}
+.btn-h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: 9px;
+    left: 76px;
+}
+
+  button {
+    border-radius: 15px;
+    background: #fff;
+    border: unset;
+    outline: 0;
+    cursor: pointer;
+    color: #65676b;
+    position: absolute;
+    height: 50px;
+    width: 80px;
+    left: 530px;
+    top: 602px;
+    padding: 5px 10px;
+  }
+.card1 {
+    margin-top: 170px;
+    margin-left: 220px;
+    max-width: 231px;
+    max-height: 216px;
+}
+.bg-card {
+    margin-top: 195px;
+    margin-top: 0;
+    border-radius: 30px;
+    background: #fff;
+    width: 148px;
+    height: 148px;
+}
+.card-h1 {
+   color: #1F1F1F;
+    position: absolute;
+    left: 230px;
+    top: 735px;
+    font-size: 16px;
+}
+.shoes1 {
+    margin-top: -320px;
+}
+.price {
+    font-weight: 700;
+}
+
+.card2 {
+    margin-top: -175px;
+    margin-left: 440px;
+    max-width: 231px;
+    max-height: 216px;
+}
+.card-h2 {
+    color: #1F1F1F;
+    position: absolute;
+    left: 452px;
+    top: 735px;
+    font-size: 16px;
+}
+.price2 {
+    font-weight: 700;
+}
+.shoes2 {
+    margin-top: -300px;
+}
+
+.bg-af1 {
+    position: absolute;
+    right: 0px;
+    top: 40px;
+}
+
+.af1 {
+    position: absolute;
+    right: 0px;
+    top: 160px;
+}
+
+.pluss {
+    color: red;
+    width: 30px;
+    position: absolute;
+    left: 338px;
+    top: 750px;
+}
+.pluss2 {
+    color: red;
+    width: 40px;
+    position: absolute;
+    left: 546px;
+    top: 750px;
+}
+
+.rec2 {
+    width: 50px;
+    margin-top: 9px;
+}
+.rec {
+    margin-left: -5px;
+    width: 50px;
+    margin-top: 9px;
+}
+
+.plus {
+    color: #f1f1f1;
+    font-size: 45px;
+    position: absolute;
+    left: 14px;
+    top: -3px;
+}
+.plus2 {
+    color: #f1f1f1;
+    font-size: 45px;
+    position: absolute;
+    left: 20px;
+    top: -3px;
+}
+
+
+@media (max-width: 800px) {
+    .logo {
+        margin-top: 80px;
+        margin-left: 140px;
+    }
+    .bg-af1 {
+        margin-top: 100px;
+        width: 60%;
+    }
+    .af1 {
+        margin-top: 30px;
+        margin-right: 20px;
+        width: 80%;
+    }
+
+    .line {
+        margin-top: 300px;
+        margin-left: -160px;
+    }
+    .sl1-h1 {
+        font-size: 30px;
+        margin-top: 430px;
+       	margin-left: 70px;
+    }
+    .sl1-h2 {
+        font-size: 26px;
+        margin-top: 10px;
+       	margin-left: 70px;
+    }
+    .sl1-h3 {
+        font-size: 26px;
+        margin-top: 10px;
+       	margin-left: 70px;
+    }
+    .sl1-p {
+        font-size: 21px;
+        margin-top: 30px;
+       	margin-left: 70px;
+    }
+    .btn {
+        margin-top: 450px;
+        margin-left: -187px;
+    }
+    .card1 {
+        margin-left: 100px;
+    }
+    .card-h1 {
+        margin-top: 445px;
+        margin-left: -120px;
+    }
+    .card2 {
+        margin-top: 70px;
+    }
+    .card-h2 {
+        margin-left: -345px;
+        margin-top: 690px;
+    }
+    .pluss {
+        margin-top: 448px;
+        margin-left: -130px;
+    }
+    .pluss2 {
+        margin-top: 688px;
+        margin-left: -340px;
+    }
+}
