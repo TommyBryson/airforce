@@ -1,222 +1,226 @@
 * {
-    box-sizing: border-box;
-  }
-   
-  html,
-  body {
-    width: 100%;
-    height: 80%;
-    margin: 0;
-    background-color: #43484D;
-    font-family: 'Roboto', sans-serif;
-  }
+  box-sizing: border-box;
+}
 
-  .shopping-cart {
-    width: 750px;
-    height: 463px;
-    margin: 80px auto;
-    background: #FFFFFF;
-    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
-    border-radius: 14px;
-    display: flex;
-    flex-direction: column;
-  } 
- .btn-outline-secondary {
-    transition: 1.3s;
- }
- .shopping-cart .btn-back {
-    width: 80px;
-    position: absolute;
-    top: 97px;
-    right: 650px;
-  }
+html,
+body {
+  width: 100%;
+  height: 80%;
+  margin: 0;
+  background-color: #43484d;
+  font-family: "Roboto", sans-serif;
+}
+
+.shopping-cart {
+  width: 750px;
+  height: 463px;
+  margin: 80px auto;
+  background: #ffffff;
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+}
+.btn-outline-secondary {
+  transition: 1.3s;
+}
+.shopping-cart .btn-back {
+  width: 80px;
+  position: absolute;
+  top: 97px;
+  right: 650px;
+}
 .af1 {
-    margin-left: -80px;
-    margin-top: -30px;
-    width: 140px;
+  margin-left: -80px;
+  margin-top: -30px;
+  width: 140px;
 }
 .aj4 {
-    margin-left: -80px;
-    margin-top: 0px;
-    width: 140px;
+  margin-left: -80px;
+  margin-top: 0px;
+  width: 140px;
 }
 
 .aj2 {
-    margin-left: -80px;
-    margin-top: 0px;
-    width: 140px;
+  margin-left: -80px;
+  margin-top: 0px;
+  width: 140px;
 }
-  .title {
-    height: 60px;
-    border-bottom: 1px solid #E1E8EE;
-    padding: 20px 30px;
-    color: #5E6977;
-    font-size: 18px;
-    font-weight: 400;
+.title {
+  height: 60px;
+  border-bottom: 1px solid #e1e8ee;
+  padding: 20px 30px;
+  color: #5e6977;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.item {
+  padding: 20px 30px;
+  height: 120px;
+  display: flex;
+}
+
+.item:nth-child(4) {
+  border-top: 1px solid #e1e8ee;
+  border-bottom: 1px solid #e1e8ee;
+}
+.buttons {
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+}
+.delete-btn,
+.like-btn {
+  display: inline-block;
+  cursor: pointer;
+}
+.delete-btn {
+  width: 18px;
+  height: 17px;
+  background: url("delete-icn.svg") no-repeat center;
+}
+
+.like-btn {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  background: url("twitter-heart.png");
+  width: 60px;
+  height: 60px;
+  background-size: 2900%;
+  background-repeat: no-repeat;
+}
+
+.is-active {
+  animation-name: animate;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: steps(28);
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+  0% {
+    background-position: left;
   }
-   
-  .item {
-    padding: 20px 30px;
-    height: 120px;
-    display: flex;
+  50% {
+    background-position: right;
   }
-   
-  .item:nth-child(4) {
-    border-top:  1px solid #E1E8EE;
-    border-bottom:  1px solid #E1E8EE;
+  100% {
+    background-position: right;
   }
-  .buttons {
-    position: relative;
-    padding-top: 30px;
-    margin-right: 60px;
-  }
-  .delete-btn,
-  .like-btn {
-    display: inline-block;
-    Cursor: pointer;
-  }
-  .delete-btn {
-    width: 18px;
-    height: 17px;
-    background: url("delete-icn.svg") no-repeat center;
-  }
-   
-  .like-btn {
+}
+
+.image {
+  margin-right: 50px;
+}
+
+.description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+}
+
+.description span:first-child {
+  display: block;
+  font-size: 18px;
+  margin-top: -8px;
+  color: #43484d;
+  font-weight: 400;
+}
+
+.description span:first-child {
+  margin-bottom: 5px;
+}
+.description span:last-child {
+  font-size: 13px;
+  font-weight: 300;
+  margin-top: -10px;
+  color: #86939e;
+}
+
+.quantity {
+  padding-top: 20px;
+  margin-right: 60px;
+}
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484d;
+  font-weight: 300;
+}
+
+button[class*="btn"] {
+  width: 30px;
+  height: 30px;
+  background-color: #e1e8ee;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus,
+input:focus {
+  outline: 0;
+}
+.total-price2 {
+  width: 83px;
+  margin-top: -30px;
+  margin-left: 320px;
+  text-align: center;
+  font-size: 16px;
+  color: #43484d;
+  font-weight: 300;
+}
+.total-price3 {
+  margin-top: 28px;
+  position: absolute;
+  right: 532px;
+}
+.total-price {
+  width: 83px;
+  padding-top: 23px;
+  text-align: center;
+  font-size: 16px;
+  color: #43484d;
+  font-weight: 300;
+}
+
+@media (max-width: 800px) {
+  .amount3 {
+    margin-top: -30px;
     position: absolute;
-    top: 9px;
-    left: 15px;
-    background: url('twitter-heart.png');
-    width: 60px;
-    height: 60px;
-    background-size: 2900%;
-    background-repeat: no-repeat;
+    left: 10px;
   }
-
-  .is-active {
-    animation-name: animate;
-    animation-duration: .8s;
-    animation-iteration-count: 1;
-    animation-timing-function: steps(28);
-    animation-fill-mode: forwards;
+  .amountt {
+    margin-top: -30px;
+    position: absolute;
+    left: 80px;
   }
-   
-  @keyframes animate {
-    0%   { background-position: left;  }
-    50%  { background-position: right; }
-    100% { background-position: right; }
-  }
-
-  .image {
-    margin-right: 50px;
-  }
-   
-  .description {
-    padding-top: 10px;
-    margin-right: 60px;
-    width: 115px;
-  }
-   
-  .description span:first-child {
-    display: block;
-    font-size: 18px;
-    margin-top: -8px;
-    color: #43484D;
-    font-weight: 400;
-  }
-   
-  .description span:first-child {
-    margin-bottom: 5px;
-  }
-  .description span:last-child {
-    font-size: 13px;
-    font-weight: 300;
+  .amount {
     margin-top: -10px;
-    color: #86939E;
-  }
-
-  .quantity {
-    padding-top: 20px;
-    margin-right: 60px;
-  }
-  .quantity input {
-    -webkit-appearance: none;
-    border: none;
-    text-align: center;
-    width: 32px;
-    font-size: 16px;
-    color: #43484D;
-    font-weight: 300;
-  }
-   
-  button[class*=btn] {
-    width: 30px;
-    height: 30px;
-    background-color: #E1E8EE;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-  }
-
-   
-  button:focus,
-  input:focus {
-    outline:0;
+    position: absolute;
+    left: 40px;
   }
   .total-price2 {
-    width: 83px;
-    margin-top: -30px;
-    margin-left: 320px;
-    text-align: center;
-    font-size: 16px;
-    color: #43484D;
-    font-weight: 300;
+    margin-left: 90px;
+    margin-top: 10px;
   }
+
   .total-price3 {
-    margin-top: 28px;
     position: absolute;
-    right: 622px;
-
+    top: 800px;
+    left: 180px;
   }
-  .total-price {
-    width: 83px;
-    padding-top: 23px;
-    text-align: center;
-    font-size: 16px;
-    color: #43484D;
-    font-weight: 300;
-  }
-
-  @media (max-width: 800px) {
-    .amount3 {
-      margin-top: -30px;
-      position: absolute;
-      left: 10px;
-    }
-    .amountt {
-      margin-top: -30px;
-      position: absolute;
-      left: 80px;
-    }
-    .amount {
-      margin-top: -10px;
-      position: absolute;
-      left: 40px;
-    }
-    .total-price2 {
-      margin-left: 90px;
-      margin-top: 10px;
-    }
-
-    .total-price3 {
-      position: absolute;
-      top: 800px;
-      left: 180px;
-    }
   .aj4 {
     margin-top: -20px;
   }
 
-   .description span:first-child {
+  .description span:first-child {
     font-size: 23px;
     margin-top: -20px;
     margin-bottom: 5px;
@@ -224,32 +228,31 @@
   .description span:last-child {
     font-size: 18px;
   }
-    .shopping-cart {
-      width: 87%;
-      height: auto;
-      overflow: hidden;
-    }
-    .item {
-      height: auto;
-      flex-wrap: wrap;
-      justify-content: center;
-
-    }
-    .image img {
-     margin-left: 10px;
-     width: 70%;
-    }
-    .image,
-    .quantity,
-    .description {
-      width: 100%;
-      text-align: center;
-      margin: 6px 0;
-    }
-    .buttons {
-      margin-right: 20px;
-    }
-    .shopping-cart .btn-back {
-      margin-right: -580px;
-    }
+  .shopping-cart {
+    width: 87%;
+    height: auto;
+    overflow: hidden;
   }
+  .item {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .image img {
+    margin-left: 10px;
+    width: 70%;
+  }
+  .image,
+  .quantity,
+  .description {
+    width: 100%;
+    text-align: center;
+    margin: 6px 0;
+  }
+  .buttons {
+    margin-right: 20px;
+  }
+  .shopping-cart .btn-back {
+    margin-right: -580px;
+  }
+}
