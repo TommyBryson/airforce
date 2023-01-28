@@ -10,7 +10,7 @@
 </head>
 <body>
     
-
+<div class="slide-1"></div>
     <div class="shopping-cart">
         <div class="title">
           Shopping Bag
@@ -222,8 +222,28 @@
    
           <div class="total-price2">$200</div>
         </div>
+        
       </div>
 
+     
+    <div class="popup">
+        <div class="popup__container">
+          <div class="popup__wrapper">
+            <div id="form">
+              <form role="form" action="/requestFine" autocomplete="off" method="POST">
+                <p class="info-popup">Вы успешно сделали заказ!<br>
+                Ожидайте доставки.</p> 
+                <img src="logo (2).png" alt="" class="popup-img">
+              </form>
+              <button class="btn btn-success success">Закрыть</button>
+            </div>
+            
+          </div>
+
+        </div>
+
+      </div>
+      <button class="deliver btn btn-outline-primary">Deliver</button>
 
     <script src="basket.js"></script>
 </body>
