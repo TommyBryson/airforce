@@ -342,5 +342,11 @@ input:focus {
     width: 80px;
     height: 35px;
     border-radius: 8px;
-}
+  }
+  .popup-img {
+    transition: 1s;
+    width: 31%;
+    margin-left: -157px;
+    margin-top: 18px;
+  }
 }
