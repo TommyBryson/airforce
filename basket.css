@@ -11,6 +11,75 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.btn-outline-warning {
+  width: 300px;
+}
+#form {
+    transition: 1s;
+    display: none;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+  }
+  
+  #form.open {
+    transition: 1s;
+    display: block;
+  }
+  
+  .popup {
+    transition: 1s;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(17, 17, 17, 0.5);
+    transition: all 0.5s ease;
+    display: none;
+  }
+  
+  .popup_open {
+    transition: 1s;
+    display: block;
+  }
+  
+  .popup__container {
+    transition: 1s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+    max-width: 588px;
+    width: 100%;
+  }
+  .popup__wrapper {
+    transition: 1s;
+    padding: 40px;
+  }
+  .popup-img {
+    transition: 1s;
+    width: 21%;
+    position: absolute;
+    left: 400px;
+    top: 67px;
+  }
+  .popup-bg {
+    transition: 1s;
+    display: none;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
 .shopping-cart {
   width: 750px;
   height: 463px;
@@ -154,15 +223,28 @@ body {
   font-weight: 300;
 }
 
-button[class*="btn"] {
-  width: 30px;
+.btn-success{
+  width: 90px;
   height: 30px;
-  background-color: #e1e8ee;
+  margin-top: 20px;
   border-radius: 6px;
   border: none;
   cursor: pointer;
 }
-
+.deliver {
+  transition: 1s;
+  margin-left: 630px;
+  margin-top: -10px;
+  width: 80px;
+  height: 35px;
+  border-radius: 8px;
+}
+.btn-back {
+  transition: 1s;
+  margin-right: -30px;
+  height: 35px;
+  border-radius: 8px;
+}
 button:focus,
 input:focus {
   outline: 0;
@@ -179,7 +261,7 @@ input:focus {
 .total-price3 {
   margin-top: 28px;
   position: absolute;
-  right: 595px;
+  right: 618px;
 }
 .total-price {
   width: 83px;
@@ -189,7 +271,6 @@ input:focus {
   color: #43484d;
   font-weight: 300;
 }
-
 @media (max-width: 800px) {
   .amount3 {
     margin-top: -30px;
@@ -255,4 +336,11 @@ input:focus {
   .shopping-cart .btn-back {
     margin-right: -580px;
   }
+  .deliver {
+    transition: 1s;
+    margin-left: 225px;
+    width: 80px;
+    height: 35px;
+    border-radius: 8px;
+}
 }
